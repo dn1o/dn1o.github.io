@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tararara</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   <h1>Napravi sajt za 15 min</h1>
+   <hr>
+    <h2>Alatke</h2>
+       <p>Pusti da se skida Git i Brackets i idi na GitHub da napraviš račun.</p>
+        <ul>
+            <li><a href="https://git-scm.com/downloads">Git</a></li>
+            <li><a href="http://brackets.io/">Brackets</a></li>
+            <li><a href="https://github.com">Github</a></li>
+       </ul>
+    <h2>Git</h2>
+        <p>Git ti u ovom slučaju služi da gurneš sajt na internet.</p>
+        <p>Kad se kod instalacije povjavi ovaj prozor: klikni na srednji kružić da bi mogao da koristiš git iz DOS-a.</p>
+        <img src="img/git-1.png" alt="Prozor">
+    <h2>Brackets</h2>
+        <p>Instalacija: Samo next next next.</p>
+    <h2>Terminal</h2>
+        <p>Instalirao si Git i Brackets i napravio si nalog na Github.</p>
+        <p>Sad upali terminal (DOS): Start, pa u search kucaj cmd, ili run pa kucaj cmd. Terminal nam stalno treba, ne gasi ga.</p>
+        <img src="img/terminal.png" alt="Terminal" width="600px">
+        <p>Trebalo bi da ti se terminal otvori ovde: <span class='code'> C:\Users\TvojUserName.</span> Da udjes na desktop utkucaj: <span class='code'>cd desktop</span> i pritisni enter. Sad si na desktopu. </p>
+        <p>Napravi novi folder sa imenom DEV, kucaj: <span class='code'>mkdir DEV</span>, pritisni enter.</p>
+        <p>Uđi u taj folder isto kao sto si malopre na desktop: <span class='code'>cd DEV</span>, enter.</p>
+    <h2>Namesti Git</h2>
+       <p>Josi si u terminalu. Treba da kazemo Gitu kako se zoves i neki mail da mu damo inace nece da radi. Kucaj:</p>
+       <p><span class='code'>git config --global user.name "Tvoje Ime"</span></p>
+       <p>Pa onda:</p>
+       <p><span class='code'>git config --global user.email "Tvoj Mail"</span></p>
+    <h2>Povezi folder DEV sa GitHub-om</h2>
+       <p>Uđi na račun koji si malopre napravi na GitHub-u i klikni na "New Repository"</p>
+       <p>Daj joj ime tacno ovako: ImeKojimSiSeRegistrovao.github.io, klikni "Create Repository"</p>
+       <p>Izaćiće ti ovaj prozor:</p>
+       <img src="img/github.png" alt="github">
+       <p>Iskopiraj prvu kutiju i pejstuj u terminal(DOS), pritisni enter. Moraš mišem, neće da radi ctrl + v.</p>
+       <p>Tražiće ti ime koje si registrovao na GitHub-u i sifru. </p>
+       <p>Kad ukucas ime i sifru kucaj: <span class='code'>git config --global credential.helper wincred</span>. Ovo ja da te windows zapamti, da ne bi morao svaki put da kucas ime i sifru.</p>
+    <h2>Napravi sajt</h2>
+      <p>Kucaj: <span class='code'>brackets .</span> Brackets-razmak-tacka. To ce da odvori brackets i da napravi novi projekat u folderu DEV.</p> 
+      <p>Kad se otvori Brackets imas desno tanki sidebar klikni na kockicu ispod munje.</p>
+      <p>Otvorice se prozor. OVde instaliras pluginove. U search ukucaj Emmet. Instaliraj Emmet plugin.</p>
+      <p>Pritisni ctrl + n, otvorice ti se novi fajl. Pritisni ctrl + s, sejvuj ga sa imenom <span class='code'>index.html</span></p>
+      <p>Na prvoj liniji napisi <span class='code'>html:5</span> i pritisni tab na tastaturi. Sajt je spreman.</p>
+      <p>Između <span class='code'> body </span> oznaka napisi <span class='code'> h1 </span> pritisni tab i napisi "Će pobedimo!"</p>
+      <p>Pritisni munju na tankom sidebaru da vidis kako izgleda. Dodaj jos nesto ako hoces.</p>
+    <h2>Gurni sajt na Github</h2>
+     <p>U terminalu kucaj: <span class='code'>git add -A && git commit -m "Napravio sam" </span></p>    
+      <p> Pa onda: <span class='code'>git push</span></p>
+      <p>U browseru kucaj adresu ImeKojimSiSeRegistrovao.github.io </p>
+      <p>Eto ti ga!</p>       
+</body>
+</html>
